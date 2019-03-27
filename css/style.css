@@ -1,0 +1,194 @@
+	body
+	{ 
+		margin-top: 50px;
+		font-family: 'Lato', sans-serif !important;
+		font-weight: 300 !important;
+		font-size: 1.6em;
+		color: black;
+	}
+
+	img.backdev
+	{
+		position: fixed;
+		top: 0;
+		left: 0;
+		z-index: -1;
+		min-width: 100%;
+		min-height: 100%;
+
+		opacity: 0.6;
+	}
+
+	.brand_nav
+	{
+		margin-left: 35px !important;
+		margin-right: 35px !important;
+
+
+	}
+
+	.nav a
+	{
+		font-size: 1.1em;
+		color: black !important;
+		font-family: 'Lato', sans-serif !important;
+		font-weight: 400 !important;
+	}
+
+	.nav a:hover 
+	{
+		font-weight: 600 !important;
+		color: #000099 !important;
+	}
+
+	.brand_nav a
+	{
+		font-size: 2em;
+		font-weight: 600 !important;
+		color: #000099 !important;
+	}
+
+	.navbar .navbar-right
+	{
+		margin-right: 25px !important;
+	}
+
+	@media all and (max-width: 768px) {
+		.brand_nav
+		{
+			margin-left: 5px !important;
+			margin-right: 5px !important;
+
+
+		}
+		
+	}
+
+	#home
+	{
+		position: relative;
+		top: 210px;
+	}
+	.text_Home_Page
+	{
+		display: flex;
+		flex-direction: column;
+		text-align: center;
+
+	}
+	.text_Home_Page h1
+	{
+		font-size: 2.7em;
+		text-transform: uppercase;
+	}
+	.text_Home_Page span:nth-child(1)
+	{
+		color: #000099;
+		font-size: 2.7em
+		font-weight: 600;
+	}
+	.text_Home_Page h3
+	{
+		font-size: 1.8em;
+		line-height:0.3em;
+
+	}
+
+
+
+	.text_Home_Page span:nth-child(2) 
+	{
+		color: #000099;
+		font-size: 1.8em
+		font-weight: 600;
+	}
+
+	.button_Home
+	{
+		margin-top: 50px;
+		display: flex;
+		justify-content: center;	
+	}
+
+		.button_Home a
+		{
+			width: 215px;
+			font-size: 1.1em;
+			text-align: center;
+			height: 37px; 
+			color:  black;
+			font-weight: 650;
+			border-radius: 7px;
+			box-shadow: 4px 4px 7px #000099;
+			border: none;
+			cursor: pointer;
+			transition: 0.5s;
+
+		}
+		.button_Home a span
+		{
+			color:  #000099;
+			margin-right: 4px;
+			font-size: 1.2em;
+
+		}
+
+
+		.button_Home a:nth-child(2) 
+		{
+			margin-left: 20px;
+
+		}
+		.button_Home a:nth-child(3) 
+		{
+			margin-left: 20px;
+
+		}
+		.button_Home a:hover
+		{
+			color:  #000099;
+
+			box-shadow: none;
+
+		}
+
+		@media all and (max-width: 1300px)
+	{
+		.text_Home_Page h3
+	{
+		line-height: normal;
+
+	}
+
+	.button_Home
+	{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+		.button_Home a:nth-child(2) 
+		{
+			margin-left: 0px;
+			margin-top: 15px;
+
+		}
+		.button_Home a:nth-child(3) 
+		{
+			margin-top: 15px;
+			margin-left: 0px;
+
+		}
+
+	}
+
+	@media all and (max-width: 768px) {
+		.brand_nav
+		{
+			margin-left: 5px !important;
+			margin-right: 5px !important;
+
+
+		}
+		
+	}
