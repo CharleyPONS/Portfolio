@@ -1,7 +1,7 @@
 class Menu //Change the style of the active tab of the menu
 {
   constructor(){
-    this.container = $(".nav li");
+    this.container = $(".nav-active-tab .nav-item a");
    
     this.container.on("click", this.activeFirstMenu(this));
 
@@ -11,7 +11,7 @@ class Menu //Change the style of the active tab of the menu
   activeFirstMenu()//Mangage the style of the header menu
   {
     this.container.on("click", function(){
-     $(".nav li").removeClass("active");
+     $(".nav-active-tab .nav-item a").removeClass("active");
      $(this).addClass("active");
 
    })
