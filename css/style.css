@@ -1,10 +1,10 @@
 	body
 	{ 
-		margin-top: 50px;
 		font-family: 'Lato', sans-serif !important;
 		font-weight: 300 !important;
-		font-size: 1.6em;
+		font-size: 1.2em;
 		color: black;
+		margin-top: 60px;
 	}
 
 	img.backdev
@@ -19,7 +19,13 @@
 		opacity: 0.6;
 	}
 
-	.brand_nav
+	.navbar-nav .nav-item .active
+	{
+		color: white !important;
+
+	}
+
+	.navbar .navbar-brand
 	{
 		margin-left: 35px !important;
 		margin-right: 35px !important;
@@ -27,7 +33,7 @@
 
 	}
 
-	.nav a
+	.navbar-nav a
 	{
 		font-size: 1.1em;
 		color: black !important;
@@ -35,39 +41,39 @@
 		font-weight: 400 !important;
 	}
 
-	.nav a:hover 
+
+	.navbar-nav a:hover 
 	{
 		font-weight: 600 !important;
 		color: #000099 !important;
 	}
 
-	.brand_nav a
+	/*Fixed Bootstrap */
+	.ml-auto .dropdown-menu {
+		left: auto !important;
+		right: 0px;
+	}
+
+	.navbar .navbar-brand 
 	{
-		font-size: 2em;
+		font-size: 1.4em;
 		font-weight: 600 !important;
 		color: #000099 !important;
 	}
 
-	.navbar .navbar-right
+	.navbar-nav .dropdown-menu
 	{
 		margin-right: 25px !important;
-	}
-
-	@media all and (max-width: 768px) {
-		.brand_nav
-		{
-			margin-left: 5px !important;
-			margin-right: 5px !important;
-
-
-		}
-		
 	}
 
 	#home
 	{
 		position: relative;
-		top: 210px;
+		padding: 60px;
+		height: 99vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
 	}
 	.text_Home_Page
 	{
@@ -78,19 +84,19 @@
 	}
 	.text_Home_Page h1
 	{
-		font-size: 2.7em;
+		font-size: 2em;
 		text-transform: uppercase;
 	}
 	.text_Home_Page span:nth-child(1)
 	{
 		color: #000099;
-		font-size: 2.7em
+		font-size: 2em
 		font-weight: 600;
 	}
 	.text_Home_Page h3
 	{
-		font-size: 1.8em;
-		line-height:0.3em;
+		font-size: 1.4em;
+		line-height:0.7em;
 
 	}
 
@@ -99,7 +105,7 @@
 	.text_Home_Page span:nth-child(2) 
 	{
 		color: #000099;
-		font-size: 1.8em
+		font-size: 1.4em
 		font-weight: 600;
 	}
 
@@ -110,62 +116,329 @@
 		justify-content: center;	
 	}
 
-		.button_Home a
-		{
-			width: 215px;
-			font-size: 1.1em;
-			text-align: center;
-			height: 37px; 
-			color:  black;
-			font-weight: 650;
-			border-radius: 7px;
-			box-shadow: 4px 4px 7px #000099;
-			border: none;
-			cursor: pointer;
-			transition: 0.5s;
-
-		}
-		.button_Home a span
-		{
-			color:  #000099;
-			margin-right: 4px;
-			font-size: 1.2em;
-
-		}
-
-
-		.button_Home a:nth-child(2) 
-		{
-			margin-left: 20px;
-
-		}
-		.button_Home a:nth-child(3) 
-		{
-			margin-left: 20px;
-
-		}
-		.button_Home a:hover
-		{
-			color:  #000099;
-
-			box-shadow: none;
-
-		}
-
-		@media all and (max-width: 1300px)
+	.button_Home a
 	{
-		.text_Home_Page h3
+		width: 220px;
+		font-size: 0.8em;
+		text-align: center;
+		height: 37px; 
+		color:  black;
+		font-weight: 650;
+		border-radius: 7px;
+		box-shadow: 3px 4px 4px 4px #000099;
+		background-color: white;
+		border: none;
+		cursor: pointer;
+		transition: 0.5s;
+
+	}
+	.button_Home a span
 	{
-		line-height: normal;
+		color:  #000099;
+		margin-right: 4px;
+		font-size: 1em;
 
 	}
 
-	.button_Home
+
+	.button_Home a:nth-child(2) 
+	{
+		margin-left: 20px;
+
+	}
+	.button_Home a:nth-child(3) 
+	{
+		margin-left: 20px;
+
+	}
+	.button_Home a:hover
+	{
+		color:  #000099;
+
+		box-shadow: none;
+
+	}
+
+	
+	#profil
+	{
+		position: relative;
+		display: flex;
+		justify-content: space-around;
+		padding: 4% 10%;
+		background-color: white;
+	}
+
+	.myPresentation
+	{
+		width: 500px;
+	}
+
+	
+
+	#profil h1
+	{
+		color: #800000;
+		font-size: 1.3em
+		font-weight: 600;
+		text-align: center;
+		margin-bottom: 15px;
+	}
+
+	#profil img
+	{
+		border-radius: 10px;
+		border: 9px solid #800000;
+		width: 175px;
+		margin-top: 70px;
+		margin-left: 70px;
+
+	}
+	.personalInformation 
+	{
+		margin-top: 70px;
+	}
+
+
+	.personalInformation ul span
+	{
+		font-weight: 600;
+		font-size: 1em;
+		color: #800000;
+	}
+
+	.personalInformation ul li
+	{
+		list-style-type: none;
+
+	}
+
+	#skills
+	{
+		position: relative;
+	}
+
+	#skills .titleSection
+	{
+		padding: 25px;
+		text-align: center;
+		font-weight: 600;
+		font-size: 2em;
+	}
+
+	#skills .introSection
+	{
+		padding: 35px 30px;
+		text-align: center;
+		font-size: 1.2em;
+		font-weight: 300;
+
+	}
+
+
+	#skills article
+	{
+		display: flex;
+		justify-content: space-around;
+		flex-wrap: wrap;
+		padding: 4% 9%;
+
+	}
+
+	.blocSkill
 	{
 		display: flex;
 		flex-direction: column;
-		align-items: center;
+		align-self: flex-end;
+		margin-bottom: 20px; 
+		width: 310px;
+
 	}
+
+	.blocSkill h1
+	{
+		font-size: 2em;
+		text-align: center;
+		font-weight: 650;
+		color: #000099;
+
+	}
+
+	.blocSkill ul
+	{
+		margin-top: 15px;
+		padding-top: 10px;
+		border-top: 1px solid white;
+	}
+
+	.knowledgeSkill
+	{
+		background-color: rgba(0, 0, 0, 0.4);
+		margin-bottom: 20px;
+		padding: 3%;
+		border-radius: 5px;
+		color: white;
+	}
+
+	.knowledgeSkill .css
+	{
+		color:#214ee5;
+	}
+	.knowledgeSkill .html
+	{
+		color:#e74b25;
+	}
+
+	.knowledgeSkill .js
+	{
+		color:#e8c931;
+	}
+
+	.knowledgeSkill .php
+	{
+		color:#757ab2;
+	}
+
+	.knowledgeSkill .boot
+	{
+		color:#200d3b;
+	}
+
+	.knowledgeSkill .symf
+	{
+		color:#282828;
+	}
+	
+
+	#portfolio
+	{
+		margin-top: 40px;
+		background-color: white;
+	}
+
+	#portfolio .portfolio_Project 
+	{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.portfolio_Project .Main_box
+	{
+		text-align: center;
+		color: #800000;
+	}
+
+	.portfolio_Project .Main_box h2
+	{
+		font-size: 1.3em;
+		padding-top: 15px;
+
+	}
+
+	.portfolio_Project .Main_box h3
+	{
+		font-size: 1em;
+		padding-bottom: 15px;
+
+	}
+
+	.portfolio_Project .portfolio_box 
+	{
+		position: relative;
+		width: 420px;
+		height: 220px;
+		margin-bottom: 25px;
+		overflow: hidden;
+		border-radius: 150px;
+		border: 4px solid #800000;
+
+
+	}
+
+
+
+	.portfolio_Project .portfolio_box img
+	{
+		width: 495px;
+		height: auto;	
+
+	}
+
+
+	.portfolio_Project .description_Portfolio
+	{
+		position: absolute;
+		bottom: 0;
+		opacity: 0;
+		padding: 17%;
+		font-size: 1.1em;
+		text-align: center;
+		color: #fff;
+		font-weight: 500;	
+		background-color: rgba(0, 0, 0, 0.5);
+
+	}
+
+	.portfolio_box a:hover img 
+	{
+		filter: grayscale(100%);
+		-webkit-filter: grayscale(100%);
+		-moz-filter: grayscale(100%);
+		-ms-filter: grayscale(100%);
+		-o-filter: grayscale(100%);
+	}
+
+	.portfolio_box a:hover .description_Portfolio
+
+	{
+		z-index: 1;
+		opacity: 1;
+		transition: 0.5s linear;
+	}
+
+	#contact .titleSection
+	{
+		padding: 25px;
+		text-align: center;
+		font-weight: 600;
+		font-size: 2em;
+	}
+
+	#contact .introSection
+	{
+		padding: 35px 30px;
+		text-align: center;
+		font-size: 1.2em;
+		font-weight: 300;
+
+	}
+
+	.alert-email
+	{
+		display: none;
+	}
+
+	.contact_Form input
+	{
+		margin-bottom: 20px;
+	}
+
+
+@media all and (max-width: 1300px)
+	{
+		.text_Home_Page h3
+		{
+			line-height: normal;
+
+		}
+
+		.button_Home
+		{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
 
 		.button_Home a:nth-child(2) 
 		{
@@ -181,8 +454,34 @@
 		}
 
 	}
+	
+	@media all and (max-width: 1000px) {
+		#profil		
+		{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+
+
+		}
+		#profil article img
+		{
+
+			margin: 50px 0px;
+
+		}
+		
+	}
 
 	@media all and (max-width: 768px) {
+		.navbar .navbar-brand
+		{
+			margin-left: 5px !important;
+			margin-right: 5px !important;
+
+
+		}
+
 		.brand_nav
 		{
 			margin-left: 5px !important;
