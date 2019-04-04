@@ -425,7 +425,7 @@
 	}
 
 
-@media all and (max-width: 1300px)
+	@media all and (max-width: 1300px)
 	{
 		.text_Home_Page h3
 		{
@@ -455,7 +455,7 @@
 
 	}
 	
-	@media all and (max-width: 1000px) {
+	@media all and (max-width: 1100px) {
 		#profil		
 		{
 			display: flex;
@@ -464,16 +464,18 @@
 
 
 		}
-		#profil article img
+		#profil img
 		{
 
-			margin: 50px 0px;
+			margin: 70px 20px;
 
 		}
 		
 	}
 
 	@media all and (max-width: 768px) {
+		
+
 		.navbar .navbar-brand
 		{
 			margin-left: 5px !important;
@@ -489,5 +491,110 @@
 
 
 		}
+		#home{
+			height:auto;
+		}
+		#profil  img
+		{
+
+			margin: 10px 10px;
+
+		}
+		#profil{
+			position: relative;
+			top: 20px;
+		}
+		.myPresentation
+		{
+			width: 90%;
+
+			padding: 20px;
+			text-align: center;
+		}
 		
 	}
+
+	@media all and (max-width: 480px) {
+
+		.text_Home_Page h1
+	{
+		font-size: 1.3em;
+	}
+	.text_Home_Page span:nth-child(1)
+	{
+		font-size: 1.1em;
+	}
+	.text_Home_Page h3
+	{
+		font-size: 1.1em;
+		line-height:1em;
+
+	}
+
+
+
+	.text_Home_Page span:nth-child(2) 
+	{
+		font-size: 1.1em;
+	}
+		
+		.navbar .navbar-brand
+		{
+			margin-left: 5px !important;
+			margin-right: 5px !important;
+
+
+		}
+
+		.brand_nav
+		{
+			margin-left: 5px !important;
+			margin-right: 5px !important;
+
+
+		}
+
+		.myPresentation
+		{
+			padding: 20px;
+			text-align: center;
+		}
+
+		.portfolio_Project .portfolio_box 
+		{
+			width: 340px;
+
+		}
+
+	.portfolio_Project .first-box
+		{
+			margin-left: 18px;
+
+		}
+
+		.portfolio_Project .portfolio_box img
+		{
+			width: 475px;
+		}
+
+	}
+
+		@media all and (max-width: 400px) {
+
+			.portfolio_Project .first-box
+		{
+			margin-left: 11px;
+
+		}
+
+			.portfolio_Project .portfolio_box 
+		{
+			width: 300px;
+
+		}
+
+		.portfolio_Project .portfolio_box img
+		{
+			width: 445px;
+		}
+
