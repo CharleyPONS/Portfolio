@@ -360,6 +360,8 @@
     </div>
 
   </form>
+    
+    </section>
   <?php
 
   function chargerClasse($classname)
@@ -392,7 +394,7 @@
 
 
   ?>
-</section>
+
 
 
 <!-- Libraries -->
