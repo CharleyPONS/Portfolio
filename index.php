@@ -356,7 +356,7 @@
      </div>
 
      <div class="input-group">
-      <div class="g-recaptcha btn-lg" data-sitekey="6Lf9pZwUAAAAADegN9yUQldnnkEY3XGDZiFyYSsl" required></div>
+      <div class="g-recaptcha btn-lg" data-sitekey="" required></div>
     </div>
     
     <div class="input-group">
@@ -377,14 +377,14 @@ function chargerClasse($classname)
 }
 spl_autoload_register('chargerClasse');
 
-$db = new PDO('mysql:host=localhost;dbname=portfolio','CharleyPONS', 'Azeres12!!!!');
+$db = new PDO('mysql:host=localhost;dbname=portfolio','', '');
 $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_WARNING);
 
 $manager = new ContactManager($db);
 
 if (!empty($_POST["submit_form"])) {//make sure that the captcha is validate before sumit the form
   if (!empty($_POST["g-recaptcha-response"])) {
-   $recaptcha = new \ReCaptcha\ReCaptcha("6Lf9pZwUAAAAAEkfiSkPa00ImVA86015Ro3X6m6X");
+   $recaptcha = new \ReCaptcha\ReCaptcha("");
    $resp = $recaptcha->verify($_POST["g-recaptcha-response"]);
    if ($resp->isSuccess())
    {
