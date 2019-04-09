@@ -1,3 +1,23 @@
+<?php// avoid the automatic send of form when the page is refreshed
+session_start();
+if (!empty($_POST)) {
+
+$_SESSION['sauvegarde'] = $_POST;
+$current = $_SERVER["PHP_SELF"];
+if (!empty($_SERVER["QUERY_STRING"])) {
+  $current .= '?' . $_SERVER["QUERY_STRING"];
+}
+
+header('location: '. $current );
+exit;
+
+}
+
+if (isset($_SESSION['sauvegarde'])) {
+  $_POST = $_SESSION['sauvegarde'];
+  unset($_SESSION["sauvegarde"]);
+}
+?>
 <!DOCTYPE html>
 
 <html lang="fr">
