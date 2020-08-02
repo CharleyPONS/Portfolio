@@ -12,4 +12,3 @@ Différents composants importants de Bootstrap sont présents, du menu en passan
 
 Ce framework m'a permis d'avoir pour mon site un design somme toute correcte :).
 
-Bonne lecture!!
